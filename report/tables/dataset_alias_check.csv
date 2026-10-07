@@ -1,0 +1,2 @@
+agg_model_id,filtered_model_id,agg_test_rows,filtered_rows,merged_rows,identical_base_accuracy,identical_label,identical_permuted_accuracy
+qwen3-8b:low,deepseek-ai/DeepSeek-R1-0528-Qwen3-8B,54,54,60,True,True,True

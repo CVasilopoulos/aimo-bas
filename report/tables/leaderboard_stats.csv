@@ -1,0 +1,3 @@
+track,submission,correct,n,accuracy,case_resolution,bootstrap_lo,bootstrap_hi,wilson_lo,wilson_hi,clopper_pearson_lo,clopper_pearson_hi,binomial_p_vs_0.5,constant_low,constant_high
+small,927463,11,19,0.579,0.053,0.368,0.789,0.363,0.769,0.335,0.797,0.648,0.474,0.526
+main,927466,14,21,0.667,0.048,0.476,0.857,0.454,0.828,0.43,0.854,0.189,0.476,0.524

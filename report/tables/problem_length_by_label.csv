@@ -1,0 +1,5 @@
+dataset,label,cases,mean_chars,median_chars
+val-sample,robust,9,227.2,189.0
+val-sample,non-robust,15,283.7,321.0
+math-deepseek-all-141,robust,36,153.0,120.5
+math-deepseek-all-141,non-robust,101,98.2,75.0

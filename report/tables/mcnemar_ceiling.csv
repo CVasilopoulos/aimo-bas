@@ -1,0 +1,5 @@
+hidden_set,n,constant_baseline_correct,max_net_lead,best_achievable_mcnemar_p,significant_at_0.05_possible
+v7 small (our run),19,10,9,0.0039,True
+v7 main (our run),21,11,10,0.002,True
+v8 small (inferred),14,9,5,0.0625,False
+v8 main (inferred),21,13,8,0.0078,True

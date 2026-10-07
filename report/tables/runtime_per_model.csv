@@ -1,0 +1,10 @@
+track,submission,model,n,variants,total_sequences,generated_sequences,chunk,chunks,allotted_s,elapsed_s,gen_s,force_s,overhead_s,generation_deadline_s,hit_wall_clock,tokens,tokens_per_trace,tokens_per_s,all_traces_capped,mean_finish,mean_agree,positives,positive_rate,budget_share,seconds_per_case
+main,927466,Qwen/Qwen3.5-4B,3,6,18,18,48,1,566.8,212.3,199.6,10.3,2.4,498.8,False,110592,6144.0,554.1,True,0.0,0.778,2,0.667,0.375,70.8
+main,927466,Skywork/Skywork-OR1-Math-7B,5,6,30,30,48,1,645.5,543.3,526.1,15.2,2.0,568.0,False,158976,5299.2,302.2,False,0.4,0.733,3,0.6,0.842,108.7
+main,927466,allenai/Olmo-3-7B-Think,4,6,24,24,21,2,674.6,618.7,591.9,25.0,1.8,593.6,True,125775,5240.6,212.5,False,0.125,0.875,2,0.5,0.917,154.7
+main,927466,deepseek-ai/DeepSeek-R1-0528-Qwen3-8B,4,6,24,24,48,1,696.9,628.4,611.3,15.0,2.1,613.3,True,136200,5675.0,222.8,False,0.0,0.583,2,0.5,0.902,157.1
+main,927466,openai/gpt-oss-120b,5,6,30,30,48,1,1113.5,229.7,197.5,26.6,5.6,979.9,False,44672,1489.1,226.2,False,1.0,0.767,3,0.6,0.206,45.9
+small,927463,Qwen/Qwen3.5-4B,3,6,18,18,48,1,779.3,213.1,200.4,10.3,2.4,685.8,False,110592,6144.0,551.9,True,0.0,0.889,2,0.667,0.273,71.0
+small,927463,Skywork/Skywork-OR1-Math-7B,6,6,36,36,48,1,968.0,634.9,614.3,18.6,2.0,851.8,False,193827,5384.1,315.5,False,0.25,0.778,3,0.5,0.656,105.8
+small,927463,allenai/Olmo-3-7B-Think,6,6,36,36,21,2,1134.4,1021.5,996.6,23.1,1.8,998.3,True,198566,5515.7,199.2,False,0.417,0.944,3,0.5,0.9,170.2
+small,927463,deepseek-ai/DeepSeek-R1-0528-Qwen3-8B,4,6,24,24,48,1,1247.0,721.1,702.6,16.3,2.2,1097.4,False,147456,6144.0,209.9,True,0.0,0.625,2,0.5,0.578,180.3

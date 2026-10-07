@@ -1,0 +1,5 @@
+snapshot,phase,task_id,task_name,task_created,entries,participants,distinct_scores,most_common_score,most_common_count,best_score,first_entry,last_entry,consistent_case_counts_10_39,listed_in_api_page
+2026-09-16,Competition phase,35766,AIMO Robustness Validation v7 - Main Track,2026-09-02T09:34,34,4,0.95 0.86 0.81 0.76,0.76,14,0.95,2026-09-06T16:42,2026-09-16T09:01,21 37,50
+2026-09-16,Competition phase,35767,AIMO Robustness Validation v7 - Small Model Track,2026-09-02T09:34,16,3,1.0 0.84 0.79 0.53,0.79,9,1.0,2026-09-06T16:42,2026-09-14T21:02,19 38,50
+2026-09-23,Competition phase,36237,AIMO Robustness Validation v8 - Main Track,2026-09-16T17:12,18,3,0.86 0.67 0.62 0.57,0.62,9,0.86,2026-09-17T04:55,2026-09-23T07:51,21,50
+2026-09-23,Competition phase,36241,AIMO Robustness Validation v8 - Small Model Track,2026-09-16T22:35,32,14,0.79 0.71 0.64 0.57,0.64,16,0.79,2026-09-16T23:52,2026-09-23T16:16,14 28,50

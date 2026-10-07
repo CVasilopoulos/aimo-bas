@@ -1,0 +1,11 @@
+net_lead_cases,min_mcnemar_p,significant_at_0.05
+1,1.0,False
+2,0.5,False
+3,0.25,False
+4,0.125,False
+5,0.0625,False
+6,0.0312,True
+7,0.0156,True
+8,0.0078,True
+9,0.0039,True
+10,0.002,True

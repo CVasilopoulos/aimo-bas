@@ -1,0 +1,40 @@
+profile,setting,value
+gpu (BASE),total_budget_s,3600.0
+gpu (BASE),safety_s,480.0
+gpu (BASE),min_model_s,45.0
+gpu (BASE),force_reserve_frac,0.12
+gpu (BASE),force_reserve_min_s,20.0
+gpu (BASE),think_tokens,6144
+gpu (BASE),answer_tokens,12
+gpu (BASE),variant_plans,"[[8, [""orig"", ""orig"", ""orig"", ""typos"", ""distract"", ""rephrase""]], [16, [""orig"", ""orig"", ""typos"", ""distract""]], [1000000, [""orig"", ""distract""]]]"
+gpu (BASE),max_kv_gb,48.0
+gpu (BASE),max_chunk,48
+gpu (BASE),temperature,0.6
+gpu (BASE),top_p,0.95
+gpu (BASE),sampling_overrides,"{""openai/gpt-oss-120b"": [1.0, 1.0]}"
+gpu (BASE),model_weights,"{""openai/gpt-oss-120b"": 1.5}"
+gpu (BASE),seed,20261101
+gpu (BASE),score_weights,"[0.5, 0.3, 0.2]"
+gpu (BASE),hi,0.9
+gpu (BASE),lo,0.3
+gpu (BASE),reasoning_effort,"""low"""
+gpu (BASE),log,true
+gpu-long,think_tokens,10240
+gpu-long,safety_s,420.0
+gpu-fast,think_tokens,3072
+gpu-fast,variant_plans,"[[8, [""orig"", ""orig"", ""typos"", ""distract""]], [1000000, [""orig"", ""distract""]]]"
+gpu-faster,think_tokens,2048
+gpu-faster,variant_plans,"[[8, [""orig"", ""orig"", ""typos"", ""distract""]], [1000000, [""orig"", ""distract""]]]"
+gpu-fast-wide,think_tokens,3072
+gpu-fast-wide,variant_plans,"[[8, [""orig"", ""orig"", ""typos"", ""distract"", ""rephrase""]], [16, [""orig"", ""orig"", ""typos"", ""distract""]], [1000000, [""orig"", ""distract""]]]"
+gpu-fast-tight,think_tokens,3072
+gpu-fast-tight,safety_s,300.0
+gpu-fast-tight,variant_plans,"[[8, [""orig"", ""orig"", ""typos"", ""distract""]], [1000000, [""orig"", ""distract""]]]"
+cpu-smoke,total_budget_s,3000.0
+cpu-smoke,safety_s,120.0
+cpu-smoke,min_model_s,5.0
+cpu-smoke,force_reserve_min_s,5.0
+cpu-smoke,think_tokens,24
+cpu-smoke,answer_tokens,6
+cpu-smoke,variant_plans,"[[8, [""orig"", ""typos"", ""distract""]], [1000000, [""orig""]]]"
+cpu-smoke,max_chunk,12

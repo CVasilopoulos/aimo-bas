@@ -1,0 +1,13 @@
+dataset,cases,robust,rule,correct,accuracy
+val-sample,24,9,always_true,9,0.375
+val-sample,24,9,always_false,15,0.625
+val-sample,24,9,base_eq_1,16,0.667
+val-sample,24,9,length_prior,12,0.5
+math-deepseek-test-100,52,11,always_true,11,0.212
+math-deepseek-test-100,52,11,always_false,41,0.788
+math-deepseek-test-100,52,11,base_eq_1,13,0.25
+math-deepseek-test-100,52,11,length_prior,17,0.327
+math-deepseek-all-141,137,36,always_true,36,0.263
+math-deepseek-all-141,137,36,always_false,101,0.737
+math-deepseek-all-141,137,36,base_eq_1,39,0.285
+math-deepseek-all-141,137,36,length_prior,49,0.358

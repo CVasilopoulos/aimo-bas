@@ -1,0 +1,5 @@
+kind,problems,mean_added_chars,mean_changed_words,mean_added_words,math_spans_preserved,digits_preserved,rename_applied
+distract,8,118.0,0.0,21.0,True,True,0
+rename,8,50.5,4.25,5.38,True,True,1
+rephrase,8,57.1,2.12,7.38,True,True,0
+typos,8,0.0,2.62,0.0,True,True,0
