@@ -1,0 +1,23 @@
+927463 2026-09-16T12:41:33.677833Z aimo-bas-v1-small.zip            Finished   lb=n accuracy=0.5789473684 coverage=1.0000000000 invalid_predictions=0.0000000000
+927466 2026-09-16T12:43:09.572754Z aimo-bas-v1-main.zip             Finished   lb=n accuracy=0.6666666667 coverage=1.0000000000 invalid_predictions=0.0000000000
+941825 2026-09-23T16:51:32.371227Z aimo-bas-v1-small.zip            Finished   lb=Y accuracy=0.4285714286 coverage=1.0000000000 invalid_predictions=0.0000000000
+941828 2026-09-23T16:52:29.298546Z aimo-bas-v1-main.zip             Finished   lb=Y accuracy=0.6190476190 coverage=1.0000000000 invalid_predictions=0.0000000000
+942805 2026-09-24T10:59:11.619311Z aimo-bas-fast-main.zip           Finished   lb=Y accuracy=0.5714285714 coverage=1.0000000000 invalid_predictions=0.0000000000
+942814 2026-09-24T11:10:42.362530Z aimo-bas-fast-small.zip          Finished   lb=Y accuracy=0.4285714286 coverage=1.0000000000 invalid_predictions=0.0000000000
+942816 2026-09-24T11:10:43.831053Z aimo-bas-fast-small.zip          Finished   lb=Y accuracy=0.4285714286 coverage=1.0000000000 invalid_predictions=0.0000000000
+943942 2026-09-25T02:40:10.215532Z aimo-bas-long-main.zip           Finished   lb=Y accuracy=0.0000000000 coverage=0.0000000000 invalid_predictions=0.0000000000
+943943 2026-09-25T02:40:10.401399Z aimo-bas-long-main.zip           Finished   lb=Y accuracy=0.5238095238 coverage=1.0000000000 invalid_predictions=0.0000000000
+943985 2026-09-25T03:20:56.994093Z aimo-bas-long-small.zip          Failed     lb=Y accuracy=0.3571428571 coverage=1.0000000000 invalid_predictions=0.0000000000
+943987 2026-09-25T03:20:58.514133Z aimo-bas-long-small.zip          Finished   lb=Y accuracy=0.3571428571 coverage=1.0000000000 invalid_predictions=0.0000000000
+948991 2026-09-28T02:40:42.562482Z aimo-bas-gpu-main.zip            Finished   lb=Y accuracy=0.6190476190 coverage=1.0000000000 invalid_predictions=0.0000000000
+949031 2026-09-28T03:11:10.430417Z aimo-bas-gpu-small.zip           Finished   lb=Y accuracy=0.4285714286 coverage=1.0000000000 invalid_predictions=0.0000000000
+949033 2026-09-28T03:11:11.443980Z aimo-bas-gpu-small.zip           Finished   lb=Y accuracy=0.4285714286 coverage=1.0000000000 invalid_predictions=0.0000000000
+950733 2026-09-29T02:40:09.895235Z aimo-bas-faster-main.zip         Finished   lb=Y accuracy=0.6190476190 coverage=1.0000000000 invalid_predictions=0.0000000000
+950748 2026-09-29T02:48:04.237549Z aimo-bas-faster-small.zip        Finished   lb=Y accuracy=0.6428571429 coverage=1.0000000000 invalid_predictions=0.0000000000
+952657 2026-09-30T02:40:11.786680Z aimo-bas-fast-wide-main.zip      Finished   lb=Y accuracy=0.6190476190 coverage=1.0000000000 invalid_predictions=0.0000000000
+952680 2026-09-30T02:55:12.787619Z aimo-bas-fast-wide-small.zip     Finished   lb=Y accuracy=0.7142857143 coverage=1.0000000000 invalid_predictions=0.0000000000
+952682 2026-09-30T02:55:13.687419Z aimo-bas-fast-wide-small.zip     Finished   lb=Y accuracy=0.7142857143 coverage=1.0000000000 invalid_predictions=0.0000000000
+954334 2026-10-01T02:40:08.915862Z aimo-bas-fast-tight-main.zip     Finished   lb=Y accuracy=0.6190476190 coverage=1.0000000000 invalid_predictions=0.0000000000
+954349 2026-10-01T02:51:54.715478Z aimo-bas-fast-tight-small.zip    Failed     lb=n accuracy=0.4285714286 coverage=1.0000000000 invalid_predictions=0.0000000000
+954350 2026-10-01T02:51:54.936244Z aimo-bas-fast-tight-small.zip    Failed     lb=n accuracy=None
+954351 2026-10-01T02:51:55.703010Z aimo-bas-fast-tight-small.zip    Failed     lb=n accuracy=0.4285714286 coverage=1.0000000000 invalid_predictions=0.0000000000

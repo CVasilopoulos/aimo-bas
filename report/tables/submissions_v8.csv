@@ -1,0 +1,15 @@
+upload_id,scored_row_id,track,task,bundle,bytes,sha256,profile,uploaded_utc,correct,n,accuracy,coverage,invalid_predictions,status,note
+941825,941825,small,v8 36241,aimo-bas-v1-small.zip,9904,685584fed46bd6ec3279169f41eb55899432b8c427f099ae400c9fe0f396bf20,gpu,2026-09-23T16:51Z,6,14,0.429,1.0,0,Finished,on leaderboard
+941828,941828,main,v8 36237,aimo-bas-v1-main.zip,9792,463729c8a5367f16791057b036a467b02a17b865fd1300dd75d7bbab207b588c,gpu,2026-09-23T16:52Z,13,21,0.619,1.0,0,Finished,on leaderboard
+942804,942805,main,v8 36237,aimo-bas-fast-main.zip,9899,aeac01b0858f43abf6cd3315aee575dc29e5e3937fe8db40e996b0e4a37840b7,gpu-fast,2026-09-24T10:59Z,12,21,0.571,1.0,0,Finished,on leaderboard
+942814,942816,small,v8 36241,aimo-bas-fast-small.zip,10011,66ae0600456e14949834321a9d6242a666720b99c624d8b56d37652b3a51abed,gpu-fast,2026-09-24T11:10Z,6,14,0.429,1.0,0,Finished,on leaderboard
+943942,943943,main,v8 36237,aimo-bas-long-main.zip,9899,88588cd386e13d3d7d7133385c99539e92f1063899948346a7f0d745938f2e72,gpu-long,2026-09-25T02:40Z,11,21,0.524,1.0,0,Finished,on leaderboard
+943985,943987,small,v8 36241,aimo-bas-long-small.zip,10011,6d7f8ac38078559dccc32511c9d362b057c4dbd5ccca6bf3a92854a0e224fb11,gpu-long,2026-09-25T03:20Z,5,14,0.357,1.0,0,Finished,on leaderboard; parent row shows Failed
+948990,948991,main,v8 36237,aimo-bas-gpu-main.zip,10862,e1adbec35df22f3b7e4bcba2d58713efcd2afdb234d7e2cb8f244b04a42bdb80,gpu,2026-09-28T02:40Z,13,21,0.619,1.0,0,Finished,on leaderboard; rebuild of the v1 settings
+949031,949033,small,v8 36241,aimo-bas-gpu-small.zip,10974,488ae0fddcd7282104b5022c1e291efa7c5b4ba74c3b3dd4dcff8dca0be8edac,gpu,2026-09-28T03:11Z,6,14,0.429,1.0,0,Finished,on leaderboard; rebuild of the v1 settings
+950732,950733,main,v8 36237,aimo-bas-faster-main.zip,10869,4054a40b26cb92e2fee16f96ffe0cc79ebe102c8aac3e69331715782150a098f,gpu-faster,2026-09-29T02:40Z,13,21,0.619,1.0,0,Finished,on leaderboard
+950745,950748,small,v8 36241,aimo-bas-faster-small.zip,10981,daac9304857a983b319d9ec525d33e69991606b3ac7cd034a5dbcba677fc15b4,gpu-faster,2026-09-29T02:48Z,9,14,0.643,1.0,0,Finished,on leaderboard
+952656,952657,main,v8 36237,aimo-bas-fast-wide-main.zip,10872,b1c4942ef9dd210b11687ec9e3ae9de3c23452e776df970542e456c87d52aafe,gpu-fast-wide,2026-09-30T02:40Z,13,21,0.619,1.0,0,Finished,on leaderboard
+952680,952682,small,v8 36241,aimo-bas-fast-wide-small.zip,10984,a56bef2213e15b3a5bb2d58173b74033579cde4b2ed2014361dcc7b1744cf89f,gpu-fast-wide,2026-09-30T02:55Z,10,14,0.714,1.0,0,Finished,on leaderboard
+954333,954334,main,v8 36237,aimo-bas-fast-tight-main.zip,10873,6c775ca34289308b23a949e4d10fc2e32fefe9c211bf8c387b8f3cb373fc0acd,gpu-fast-tight,2026-10-01T02:40Z,13,21,0.619,1.0,0,Finished,on leaderboard
+954349,,small,v8 36241,aimo-bas-fast-tight-small.zip,10985,3fbdaddfc1281d7efb00f5d93dfe4260f3a1867f90c40f32428f7e7abd5d3fab,gpu-fast-tight,2026-10-01T02:51Z,,14,,,,Failed,rows 954349-954351 all Failed and not on the leaderboard; 954349 and 954351 display 0.4286 with coverage 1.0

@@ -7,10 +7,12 @@ TRACK="$3"
 NAME="${4:-aimo-run}"
 LIMIT="${5:-3000}"
 OFFICIAL=ghcr.io/aimo-interp/aimo-codabench-runtime:torch2.12.1-cuda13.2-cudnn9-transformers5.13.0-sklearn1.8.0-kernels0.15.2
-REPLICA=aimo-cpu-runtime:torch2.12.1-tf5.13.0
-if [ -z "${IMAGE:-}" ]; then
-  if docker image inspect "$OFFICIAL" >/dev/null 2>&1; then IMAGE="$OFFICIAL"; else IMAGE="$REPLICA"; fi
-fi
+IMAGE="${IMAGE:-$OFFICIAL}"
+MEMORY="${MEMORY:-10g}"
+CPUS="${CPUS:-8}"
+HF_CACHE="$(cd "${HF_CACHE:-$HERE/hf-cache}" 2>/dev/null && pwd || echo "$HERE/hf-cache")"
+if ! docker image inspect "$IMAGE" >/dev/null 2>&1; then echo "image $IMAGE not present; run: docker pull $IMAGE"; exit 2; fi
+if [ ! -f "$HERE/research/getting-started/components/ingestion_program/ingestion.py" ]; then echo "organisers' ingestion program missing; run: python3 tools/fetch_inputs.py"; exit 2; fi
 case "$NAME" in aimo-*) ;; *) echo "container name must start with aimo-"; exit 2;; esac
 avail=$(free -g | awk '/^Mem:/{print $7}')
 if [ "$avail" -lt 20 ]; then echo "only ${avail}G available; not starting"; exit 75; fi
@@ -23,9 +25,9 @@ cp -r "$DATA/reference" "$WORK/input/ref"
 start=$(date +%s)
 set +e
 timeout --foreground "$LIMIT" docker run --rm --name "$NAME" --network none \
-  --memory=10g --memory-swap=10g --cpus=8 \
-  -e AIMO_BAS_PROFILE="${AIMO_BAS_PROFILE:-}" -e OMP_NUM_THREADS=8 \
-  -v "$HERE/hf-cache:/app/data/huggingface:ro" \
+  --memory="$MEMORY" --memory-swap="$MEMORY" --cpus="$CPUS" \
+  -e AIMO_BAS_PROFILE="${AIMO_BAS_PROFILE:-}" -e OMP_NUM_THREADS="${CPUS%.*}" \
+  -v "$HF_CACHE:/app/data/huggingface:ro" \
   -v "$HERE/research/getting-started/components/ingestion_program:/app/program:ro" \
   -v "$DATA/input:/app/input_data:ro" \
   -v "$WORK/input/res:/app/output" \

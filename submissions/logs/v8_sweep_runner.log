@@ -1,0 +1,86 @@
+2026-09-24T10:59:07Z building aimo-bas-fast for profile gpu-fast
+2026-09-24T10:59:07Z uploading aimo-bas-fast-main.zip (main, gpu-fast)
+2026-09-24T11:10:35Z main/gpu-fast id 942804 -> Finished {"accuracy": "0.0000000000", "coverage": "0.0000000000", "invalid_predictions": "14.0000000000"}
+2026-09-24T11:10:38Z building aimo-bas-fast for profile gpu-fast
+2026-09-24T11:10:38Z uploading aimo-bas-fast-small.zip (small, gpu-fast)
+2026-09-24T11:20:02Z small/gpu-fast id 942814 -> Finished {"accuracy": "0.4285714286", "coverage": "1.0000000000", "invalid_predictions": "0.0000000000"}
+2026-09-24T11:35:26Z === aimo profile sweep start (mode=--dry-run)
+2026-09-24T11:35:26Z host: 23G available memory, 1110G free disk
+2026-09-24T11:35:26Z queue:
+main gpu-fast
+small gpu-fast
+main gpu-long
+small gpu-long
+2026-09-25T02:40:01Z === aimo profile sweep start (mode=full)
+2026-09-25T02:40:01Z host: 26G available memory, 1107G free disk
+2026-09-25T02:40:06Z building aimo-bas-long for profile gpu-long
+2026-09-25T02:40:06Z uploading aimo-bas-long-main.zip (main, gpu-long)
+2026-09-25T03:20:28Z main/gpu-long id 943942 -> Finished {"accuracy": "0.0000000000", "coverage": "0.0000000000", "invalid_predictions": "14.0000000000"}
+2026-09-25T03:20:42Z main/gpu-long scored row is 943943 accuracy 0.5238095238
+2026-09-25T03:20:49Z building aimo-bas-long for profile gpu-long
+2026-09-25T03:20:49Z uploading aimo-bas-long-small.zip (small, gpu-long)
+2026-09-25T04:51:28Z small/gpu-long id 943985 -> Running {"accuracy": "0.3571428571", "coverage": "1.0000000000", "invalid_predictions": "0.0000000000"}
+2026-09-25T04:51:43Z small/gpu-long scored row is 943987 accuracy 0.3571428571
+2026-09-25T04:51:46Z === aimo profile sweep end rc=0
+2026-09-26T02:40:01Z === aimo profile sweep start (mode=full)
+2026-09-26T02:40:01Z host: 27G available memory, 1105G free disk
+2026-09-26T02:40:02Z no slot left (None); stopping
+2026-09-26T02:40:02Z === aimo profile sweep end rc=0
+2026-09-27T02:40:01Z === aimo profile sweep start (mode=full)
+2026-09-27T02:40:01Z host: 43G available memory, 1104G free disk
+2026-09-27T02:40:02Z building aimo-bas-long for profile gpu-long
+2026-09-27T02:40:02Z uploading aimo-bas-long-small.zip (small, gpu-long)
+2026-09-27T02:41:08Z small/gpu-long id 943987 -> Finished {"accuracy": "0.3571428571", "coverage": "1.0000000000", "invalid_predictions": "0.0000000000"}
+2026-09-27T02:41:10Z small/gpu-long scored row is 943987 accuracy 0.3571428571
+2026-09-27T02:41:14Z === aimo profile sweep end rc=0
+2026-09-28T02:40:01Z === aimo profile sweep start (mode=full)
+2026-09-28T02:40:01Z host: 43G available memory, 1103G free disk
+2026-09-28T02:40:17Z building aimo-bas-gpu for profile gpu
+2026-09-28T02:40:17Z uploading aimo-bas-gpu-main.zip (main, gpu)
+2026-09-28T03:11:01Z main/gpu id 948990 -> Finished {"accuracy": "0.0000000000", "coverage": "0.0000000000", "invalid_predictions": "14.0000000000"}
+2026-09-28T03:11:04Z main/gpu scored row is 948991 accuracy 0.619047619
+2026-09-28T03:11:06Z building aimo-bas-gpu for profile gpu
+2026-09-28T03:11:06Z uploading aimo-bas-gpu-small.zip (small, gpu)
+2026-09-28T03:50:39Z small/gpu id 949031 -> Finished {"accuracy": "0.4285714286", "coverage": "1.0000000000", "invalid_predictions": "0.0000000000"}
+2026-09-28T03:50:41Z small/gpu scored row is 949033 accuracy 0.4285714286
+2026-09-28T03:50:48Z === aimo profile sweep end rc=0
+2026-09-29T02:40:01Z === aimo profile sweep start (mode=full)
+2026-09-29T02:40:01Z host: 43G available memory, 1101G free disk
+2026-09-29T02:40:02Z building aimo-bas-faster for profile gpu-faster
+2026-09-29T02:40:02Z uploading aimo-bas-faster-main.zip (main, gpu-faster)
+2026-09-29T02:47:54Z main/gpu-faster id 950732 -> Finished {"accuracy": "0.0000000000", "coverage": "0.0000000000", "invalid_predictions": "14.0000000000"}
+2026-09-29T02:47:56Z main/gpu-faster scored row is 950733 accuracy 0.619047619
+2026-09-29T02:47:59Z building aimo-bas-faster for profile gpu-faster
+2026-09-29T02:47:59Z uploading aimo-bas-faster-small.zip (small, gpu-faster)
+2026-09-29T02:54:14Z small/gpu-faster id 950745 -> Finished {"accuracy": "0.6428571429", "coverage": "1.0000000000", "invalid_predictions": "0.0000000000"}
+2026-09-29T02:54:17Z small/gpu-faster scored row is 950748 accuracy 0.6428571429
+2026-09-29T02:54:20Z === aimo profile sweep end rc=0
+2026-09-30T02:40:01Z === aimo profile sweep start (mode=full)
+2026-09-30T02:40:01Z host: 43G available memory, 1100G free disk
+2026-09-30T02:40:03Z building aimo-bas-fast-wide for profile gpu-fast-wide
+2026-09-30T02:40:03Z uploading aimo-bas-fast-wide-main.zip (main, gpu-fast-wide)
+2026-09-30T02:55:05Z main/gpu-fast-wide id 952656 -> Finished {"accuracy": "0.0000000000", "coverage": "0.0000000000", "invalid_predictions": "14.0000000000"}
+2026-09-30T02:55:07Z main/gpu-fast-wide scored row is 952657 accuracy 0.619047619
+2026-09-30T02:55:08Z building aimo-bas-fast-wide for profile gpu-fast-wide
+2026-09-30T02:55:08Z uploading aimo-bas-fast-wide-small.zip (small, gpu-fast-wide)
+2026-09-30T03:05:37Z small/gpu-fast-wide id 952680 -> Finished {"accuracy": "0.7142857143", "coverage": "1.0000000000", "invalid_predictions": "0.0000000000"}
+2026-09-30T03:05:40Z small/gpu-fast-wide scored row is 952682 accuracy 0.7142857143
+2026-09-30T03:05:46Z === aimo profile sweep end rc=0
+2026-10-01T02:40:01Z === aimo profile sweep start (mode=full)
+2026-10-01T02:40:01Z host: 43G available memory, 1099G free disk
+2026-10-01T02:40:03Z building aimo-bas-fast-tight for profile gpu-fast-tight
+2026-10-01T02:40:03Z uploading aimo-bas-fast-tight-main.zip (main, gpu-fast-tight)
+2026-10-01T02:51:43Z main/gpu-fast-tight id 954333 -> Finished {"accuracy": "0.0000000000", "coverage": "0.0000000000", "invalid_predictions": "14.0000000000"}
+2026-10-01T02:51:48Z main/gpu-fast-tight scored row is 954334 accuracy 0.619047619
+2026-10-01T02:51:50Z building aimo-bas-fast-tight for profile gpu-fast-tight
+2026-10-01T02:51:50Z uploading aimo-bas-fast-tight-small.zip (small, gpu-fast-tight)
+2026-10-01T04:22:18Z small/gpu-fast-tight id 954349 -> Running {"accuracy": "0.4285714286", "coverage": "1.0000000000", "invalid_predictions": "0.0000000000"}
+2026-10-01T04:22:26Z small/gpu-fast-tight produced no row with coverage 1 and zero invalid predictions
+2026-10-01T04:22:30Z === aimo profile sweep end rc=0
+2026-10-02T02:40:01Z === aimo profile sweep start (mode=full)
+2026-10-02T02:40:01Z host: 43G available memory, 1098G free disk
+2026-10-02T02:40:07Z building aimo-bas-fast-tight for profile gpu-fast-tight
+2026-10-02T02:40:07Z uploading aimo-bas-fast-tight-small.zip (small, gpu-fast-tight)
+2026-10-02T03:48:12Z small/gpu-fast-tight id 954351 -> Failed {"accuracy": "0.4285714286", "coverage": "1.0000000000", "invalid_predictions": "0.0000000000"}
+2026-10-02T03:48:16Z small/gpu-fast-tight produced no row with coverage 1 and zero invalid predictions
+2026-10-02T03:48:20Z === aimo profile sweep end rc=0

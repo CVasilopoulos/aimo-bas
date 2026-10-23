@@ -1,0 +1,5 @@
+variant,description,n,robust,auc,auc_ci_low,auc_ci_high,delta_auc_vs_full,delta_auc_ci_low,delta_auc_ci_high,rule_accuracy,rule_positives,topk_accuracy,full_right_variant_wrong,variant_right_full_wrong,mcnemar_p_vs_full,changed_predictions_vs_full
+full,"BAS as submitted: forced answers, agree/finish/confidence 0.5/0.3/0.2",52,36,0.491,0.304,0.673,0.0,0.0,0.0,0.538,28,0.615,0,0,1.0,0
+no-confidence,"forced answers kept, confidence dropped: agree/finish 0.625/0.375",52,36,0.466,0.277,0.653,-0.025,-0.071,0.016,0.462,28,0.615,7,3,0.3438,10
+no-probe,"no forced-answer pass: unclosed traces have no answer, no confidence: 0.625/0.375",52,36,0.44,0.282,0.592,-0.051,-0.146,0.045,0.346,12,0.769,13,3,0.0213,16
+confidence-only,confidence of the forced answer alone,52,36,0.601,0.438,0.751,0.109,-0.012,0.25,0.558,37,0.538,5,6,1.0,11

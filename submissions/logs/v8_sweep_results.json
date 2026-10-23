@@ -1,0 +1,188 @@
+{
+ "runs": [
+  {
+   "date": "2026-09-24",
+   "track": "main",
+   "profile": "gpu-fast",
+   "id": 942805,
+   "zip": "aimo-bas-fast-main.zip",
+   "status": "Finished",
+   "scores": {
+    "accuracy": "0.5714285714",
+    "coverage": "1.0000000000",
+    "invalid_predictions": "0.0000000000"
+   },
+   "parent_id": 942804
+  },
+  {
+   "date": "2026-09-24",
+   "track": "small",
+   "profile": "gpu-fast",
+   "id": 942816,
+   "zip": "aimo-bas-fast-small.zip",
+   "status": "Finished",
+   "scores": {
+    "accuracy": "0.4285714286",
+    "coverage": "1.0000000000",
+    "invalid_predictions": "0.0000000000"
+   },
+   "parent_id": 942814
+  },
+  {
+   "date": "2026-09-25",
+   "track": "main",
+   "profile": "gpu-long",
+   "id": 943943,
+   "zip": "aimo-bas-long-main.zip",
+   "status": "Finished",
+   "scores": {
+    "accuracy": "0.5238095238",
+    "coverage": "1.0000000000",
+    "invalid_predictions": "0.0000000000"
+   }
+  },
+  {
+   "date": "2026-09-25",
+   "track": "small",
+   "profile": "gpu-long",
+   "id": 943987,
+   "zip": "aimo-bas-long-small.zip",
+   "status": "Running",
+   "scores": {
+    "accuracy": "0.3571428571",
+    "coverage": "1.0000000000",
+    "invalid_predictions": "0.0000000000"
+   }
+  },
+  {
+   "date": "2026-09-27",
+   "track": "small",
+   "profile": "gpu-long",
+   "id": 943987,
+   "zip": "aimo-bas-long-small.zip",
+   "status": "Finished",
+   "scores": {
+    "accuracy": "0.3571428571",
+    "coverage": "1.0000000000",
+    "invalid_predictions": "0.0000000000"
+   }
+  },
+  {
+   "date": "2026-09-28",
+   "track": "main",
+   "profile": "gpu",
+   "id": 948991,
+   "zip": "aimo-bas-gpu-main.zip",
+   "status": "Finished",
+   "scores": {
+    "accuracy": "0.6190476190",
+    "coverage": "1.0000000000",
+    "invalid_predictions": "0.0000000000"
+   }
+  },
+  {
+   "date": "2026-09-28",
+   "track": "small",
+   "profile": "gpu",
+   "id": 949033,
+   "zip": "aimo-bas-gpu-small.zip",
+   "status": "Finished",
+   "scores": {
+    "accuracy": "0.4285714286",
+    "coverage": "1.0000000000",
+    "invalid_predictions": "0.0000000000"
+   }
+  },
+  {
+   "date": "2026-09-29",
+   "track": "main",
+   "profile": "gpu-faster",
+   "id": 950733,
+   "zip": "aimo-bas-faster-main.zip",
+   "status": "Finished",
+   "scores": {
+    "accuracy": "0.6190476190",
+    "coverage": "1.0000000000",
+    "invalid_predictions": "0.0000000000"
+   }
+  },
+  {
+   "date": "2026-09-29",
+   "track": "small",
+   "profile": "gpu-faster",
+   "id": 950748,
+   "zip": "aimo-bas-faster-small.zip",
+   "status": "Finished",
+   "scores": {
+    "accuracy": "0.6428571429",
+    "coverage": "1.0000000000",
+    "invalid_predictions": "0.0000000000"
+   }
+  },
+  {
+   "date": "2026-09-30",
+   "track": "main",
+   "profile": "gpu-fast-wide",
+   "id": 952657,
+   "zip": "aimo-bas-fast-wide-main.zip",
+   "status": "Finished",
+   "scores": {
+    "accuracy": "0.6190476190",
+    "coverage": "1.0000000000",
+    "invalid_predictions": "0.0000000000"
+   }
+  },
+  {
+   "date": "2026-09-30",
+   "track": "small",
+   "profile": "gpu-fast-wide",
+   "id": 952682,
+   "zip": "aimo-bas-fast-wide-small.zip",
+   "status": "Finished",
+   "scores": {
+    "accuracy": "0.7142857143",
+    "coverage": "1.0000000000",
+    "invalid_predictions": "0.0000000000"
+   }
+  },
+  {
+   "date": "2026-10-01",
+   "track": "main",
+   "profile": "gpu-fast-tight",
+   "id": 954334,
+   "zip": "aimo-bas-fast-tight-main.zip",
+   "status": "Finished",
+   "scores": {
+    "accuracy": "0.6190476190",
+    "coverage": "1.0000000000",
+    "invalid_predictions": "0.0000000000"
+   }
+  },
+  {
+   "date": "2026-10-01",
+   "track": "small",
+   "profile": "gpu-fast-tight",
+   "id": 954349,
+   "zip": "aimo-bas-fast-tight-small.zip",
+   "status": "Running",
+   "scores": {
+    "accuracy": "0.4285714286",
+    "coverage": "1.0000000000",
+    "invalid_predictions": "0.0000000000"
+   }
+  },
+  {
+   "date": "2026-10-02",
+   "track": "small",
+   "profile": "gpu-fast-tight",
+   "id": 954351,
+   "zip": "aimo-bas-fast-tight-small.zip",
+   "status": "Failed",
+   "scores": {
+    "accuracy": "0.4285714286",
+    "coverage": "1.0000000000",
+    "invalid_predictions": "0.0000000000"
+   }
+  }
+ ]
+}

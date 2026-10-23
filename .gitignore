@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+hf-cache/
+research/hf/
+research/modelcfg/
+research/getting-started/
+research/baselines/
+data/val-sample/
+data/math-deepseek/
+runs/*
+!runs/kaggle_ablate/
