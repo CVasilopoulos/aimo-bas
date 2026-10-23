@@ -27,6 +27,7 @@ To score a bundle, upload it unchanged to the matching Codabench task (a Small b
 | `tools/build.py` | builds a bundle pair: `python3 tools/build.py --name aimo-bas-v1 [--profile gpu-fast]` (fixed zip timestamps) |
 | `tools/verify_bundles.py` | checks every bundle against its manifest hash, rebuilds it byte-identically and diffs it against `solution/` |
 | `tools/fetch_inputs.py` | fetches the organisers' public datasets, model configs and repositories at pinned revisions, checking SHA-256 |
+| `tools/fetch_probe_models.sh` | downloads the two small probe models of the local contract test at pinned revisions into `hf-cache/` |
 | `tools/run_local.sh` | local contract test inside the organisers' runtime image with `--network none` |
 | `tools/make_cases.py`, `tools/ablate.py`, `tools/kaggle_ablation.py`, `tools/commitment_curve.py` | case files, the feature-dump driver, the GPU ablation driver behind Table 3, and the commitment-curve experiment |
 | `tools/report/` | scripts that regenerate every table and figure (`run_all.sh`; Table 3 from `ablation_tables.py`; the white-box ablation from `whitebox_ablation.py`) |
@@ -58,14 +59,13 @@ python3 tools/report/whitebox_ablation.py
 git status --short report/
 ```
 
-Every table under `report/tables/` regenerates byte-identically; the PNG figures are redrawn from those tables and differ only in bytes written by the plotting library.
+Every table under `report/tables/` regenerates byte-identically. The figures are redrawn pixel-identically (one figure has 91 pixels one intensity level apart); their PNG bytes differ, so `git status` lists them as modified.
 
 Local contract test in the organisers' runtime image (CPU is enough; the `cpu-smoke` profile applies automatically without CUDA):
 
 ```bash
 docker pull ghcr.io/aimo-interp/aimo-codabench-runtime:torch2.12.1-cuda13.2-cudnn9-transformers5.13.0-sklearn1.8.0-kernels0.15.2
-uv run --with huggingface_hub hf download Qwen/Qwen3.5-0.8B --revision 2fc06364715b967f1860aea9cf38778875588b17 --cache-dir hf-cache/hub
-uv run --with huggingface_hub hf download Qwen/Qwen3-0.6B --revision c1899de289a04d12100db370d81485cdf75e47ca --cache-dir hf-cache/hub
+tools/fetch_probe_models.sh
 MEMORY=6g CPUS=6 tools/run_local.sh submissions/aimo-bas-v1-small.zip data/smoke-qwen small
 MEMORY=6g CPUS=6 tools/run_local.sh submissions/aimo-bas-v1-main.zip data/smoke-qwen main
 ```
