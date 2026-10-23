@@ -367,13 +367,23 @@ Table 5 and Figures 2 and 3 are computed from these lines (`runtime_per_model.cs
 The drivers exist and were smoke-tested on CPU with proxy models; the commands below are the exact ones.
 
 1. Difficulty versus sensitivity on all 137 labelled DeepSeek MATH cases, dumping per-problem features and per-sample answers, with the full, original-only and perturbed-only variant plans, and comparing `orig_agree`, `stable`, `agree`, `finish` and `confidence` as predictors of the label (AUC and median-split accuracy):
-   `uv run tools/make_cases.py research/hf/augmented-sample-math-agg.parquet data/math-deepseek`
-   `python3 tools/ablate.py --cases data/math-deepseek/input/cases.jsonl --labels data/math-deepseek/reference/labels.jsonl --out runs/ablate/deepseek-math-6144.jsonl --budget-s 100000 --think-tokens 6144`
-   `python3 tools/ablate.py ... --variants orig,orig,orig,orig,orig,orig --out runs/ablate/deepseek-math-6144-orig.jsonl`
-   `python3 tools/ablate.py ... --variants typos,distract,rephrase,typos,distract,rephrase --out runs/ablate/deepseek-math-6144-pert.jsonl`
+
+   ```
+   uv run tools/make_cases.py research/hf/augmented-sample-math-agg.parquet data/math-deepseek
+   python3 tools/ablate.py --cases data/math-deepseek/input/cases.jsonl --labels data/math-deepseek/reference/labels.jsonl --out runs/ablate/deepseek-math-6144.jsonl --budget-s 100000 --think-tokens 6144
+   python3 tools/ablate.py ... --variants orig,orig,orig,orig,orig,orig --out runs/ablate/deepseek-math-6144-orig.jsonl
+   python3 tools/ablate.py ... --variants typos,distract,rephrase,typos,distract,rephrase --out runs/ablate/deepseek-math-6144-pert.jsonl
+   ```
+
 2. Public-data thinking-budget curve: as item 1 with `--think-tokens 3072` and `10240`.
 3. Commitment curve: sample 3 traces per public AIMO problem to 10240 tokens once, force the answer at 512, 1024, 2048, 3072, 4096, 6144, 8192 and 10240 tokens, and report agreement with the finished answer and confidence per cut:
-   `python3 tools/commitment_curve.py --model Qwen/Qwen3.5-4B --cases data/val-sample/input/cases.jsonl --remap --out runs/ablate/commit-qwen4b.jsonl` (the case file supplies the problems; `--remap` runs all of them on the given model, since the public sample lists only the organisers' large models).
+
+   ```
+   python3 tools/commitment_curve.py --model Qwen/Qwen3.5-4B --cases data/val-sample/input/cases.jsonl --remap --out runs/ablate/commit-qwen4b.jsonl
+   ```
+
+   The case file supplies the problems; `--remap` runs all of them on the given model, since the public sample lists only the organisers' large models.
+
 4. Score-weight ablation beyond the single features of Table 3 and the variants of Table 4: a re-scoring of the dumps from item 1 with `tools/report/whitebox_ablation.py <dump> <output.csv>`; no GPU needed.
 
 ## Appendix I: bundle inventory
